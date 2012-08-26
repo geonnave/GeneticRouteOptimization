@@ -2,8 +2,32 @@
 
 module Util
 	
-	def random_graph size
+	def random_graph size=10, min=1, max=20
+		rg = []
+		0.upto(size-1) do |i| 
+			rl = []
+			0.upto(size-1) do |j|
+				rl << 0 if i == j
 
+				rl << min + ijbased_rand(i, j, max) + 1 unless i <= j
+			end
+			rg << rl
+		end
+		0.upto(size-1) do |i| 
+			0.upto(size-1) do |j|
+				next if i > j
+				rg[i][j] = rg[j][i] unless i > j
+			end
+		end
+		rg
+	end
+
+	def ijbased_rand i, j, max
+		ij = (i-j).abs
+		return Random.rand(max) if ij == 1
+		cij = Random.rand(ij) + ij
+		r = Random.rand(max)
+		return (r + (r*cij))
 	end
 
 	def random_genetic_code graph_size=4
