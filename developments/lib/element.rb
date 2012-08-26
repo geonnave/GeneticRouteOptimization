@@ -10,8 +10,12 @@ class Element
 
 	def fitness
 		sum = 0
-		(@genetic_code.size-2).times do |i|
-				sum += @graph.get_weight(@genetic_code[i], @genetic_code[i+1])
+		if @genetic_code.size == 2
+			sum = @graph.get_weight(@genetic_code[0], @genetic_code[1])
+		else
+			(@genetic_code.size-1).times do |i|
+					sum += @graph.get_weight(@genetic_code[i], @genetic_code[i+1])
+			end
 		end
 		sum
 	end

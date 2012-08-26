@@ -13,14 +13,10 @@ graph = Graph.new(graph_weights)
 
 ga.gen_population
 
-puts ga.population
+graph_weights.each { |e| print e, "\n" }
 
-puts ","
+puts
 ga.population.each{|e| puts ("fitnes of #{e} is #{e.fitness}")}
 puts
-
-ga.population.sort!
-
-ga.population.each{|e| puts e.fitness}
 
 puts
