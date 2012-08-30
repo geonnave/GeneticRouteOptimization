@@ -5,9 +5,7 @@ class GeneticAlgorithm
 	include Util
 	attr_reader :population
 	
-	#gen_range is a rate of the worst elements that will be eliminated.
-	#if it is 20%, 80% of the best elements will paste to the next generation.
-	def initialize graph, number_of_generations = 20,pop_length=400, cross_rate=10,mutation_rate=10, gen_range=20
+	def initialize graph, number_of_generations = 20,pop_length=400, cross_rate=10,mutation_rate=10, gen_range=80
 		@number_of_generations = number_of_generations
 		@graph = graph
 		@population = []
@@ -35,6 +33,7 @@ class GeneticAlgorithm
 		end
 		genetic_codes.uniq!
 		genetic_codes.each { |genetic_code| @population << Element.new(genetic_code,@graph) }
+
 		sort_population
 	end
 
@@ -56,7 +55,15 @@ class GeneticAlgorithm
 	end
 
 	def calculate rate
-		((@population.size/100)*rate)
+		tmp = (@population.size/rate)
+		count = 0
+		if tmp.is_a? Float
+			count = tmp.ceil
+		else
+			count = tmp
+		end
+		count
 	end
 
 end
+

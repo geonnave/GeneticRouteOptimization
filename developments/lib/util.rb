@@ -32,7 +32,11 @@ module Util
 
 	def random_genetic_code graph_size=4
 		size = Random.rand(graph_size-1)
-		genetic_code = Array(1..(size)).shuffle
+		genetic_code = []
+		1.upto(size-1) do 
+			gen = Random.rand(graph_size-2)+1
+			genetic_code << gen unless genetic_code.include? gen
+		end
 		genetic_code.insert(0,0)
 		genetic_code << graph_size-1
 	end
