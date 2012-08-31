@@ -5,7 +5,7 @@ require "./genetic_algorithm.rb"
 
 include Util 
 
-graph_weights = Util.random_graph 40, 10, 50
+graph_weights = Util.random_graph 100, 10, 50
 
 graph = Graph.new(graph_weights)
 

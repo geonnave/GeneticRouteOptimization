@@ -80,13 +80,13 @@
 	},
 	"file_history":
 	[
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/graph.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/element.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/genetic_algorithm.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/util.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb~",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/genetic_algorithm.rb~",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb~",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/dev.sublime-workspace",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/AG.rb~",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/article/tex/commands.tex",
@@ -216,7 +216,7 @@
 		"cols":
 		[
 			0.0,
-			0.955500220272,
+			0.533409490489,
 			1.0
 		],
 		"rows":

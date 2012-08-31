@@ -59,23 +59,7 @@
 			"file": "article.tex",
 			"settings":
 			{
-				"buffer_size": 674,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tex/title.tex",
-			"settings":
-			{
-				"buffer_size": 1509,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tex/abstract.tex",
-			"settings":
-			{
-				"buffer_size": 75,
+				"buffer_size": 673,
 				"line_ending": "Unix"
 			}
 		},
@@ -83,7 +67,7 @@
 			"file": "tex/introduction.tex",
 			"settings":
 			{
-				"buffer_size": 54,
+				"buffer_size": 267,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +75,7 @@
 			"file": "tex/methods.tex",
 			"settings":
 			{
-				"buffer_size": 19,
+				"buffer_size": 27,
 				"line_ending": "Unix"
 			}
 		},
@@ -128,42 +112,10 @@
 			}
 		},
 		{
-			"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/element.rb",
+			"file": "data/references.bib",
 			"settings":
 			{
-				"buffer_size": 485,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/genetic_algorithm.rb",
-			"settings":
-			{
-				"buffer_size": 646,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/util.rb",
-			"settings":
-			{
-				"buffer_size": 1114,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/graph.rb",
-			"settings":
-			{
-				"buffer_size": 184,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb",
-			"settings":
-			{
-				"buffer_size": 478,
+				"buffer_size": 1468,
 				"line_ending": "Unix"
 			}
 		}
@@ -192,6 +144,13 @@
 	},
 	"file_history":
 	[
+		"/home/geonnave/College/CN/GeneticRouteOptimization/article/tex/abstract.tex",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/article/tex/title.tex",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/graph.rb",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/genetic_algorithm.rb",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/element.rb",
+		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/util.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/AG.rb~",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb~",
 		"/home/geonnave/College/TECC/developments/lib/primitivas.rb",
@@ -204,11 +163,6 @@
 		"/home/geonnave/College/TECC/developments/fecho_convexo/fecho1.rb",
 		"/home/geonnave/College/TECC/developments/fecho_convexo/fecho2.rb",
 		"/home/geonnave/College/TECC/developments/fecho_convexo/lib/main.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/element.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/graph.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/util.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb",
-		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/genetic_algorithm.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/AG.rb",
 		"/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/randomics.rb",
 		"/home/geonnave/College/TECC/fecho_convexo_plano/lib/primitivas.rb",
@@ -276,7 +230,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -284,15 +238,15 @@
 					"file": "article.tex",
 					"settings":
 					{
-						"buffer_size": 674,
+						"buffer_size": 673,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								134,
-								134
+								634,
+								634
 							]
 						],
 						"settings":
@@ -300,32 +254,30 @@
 							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "tex/title.tex",
+					"file": "tex/introduction.tex",
 					"settings":
 					{
-						"buffer_size": 1509,
+						"buffer_size": 267,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								250,
+								250
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -335,25 +287,23 @@
 				},
 				{
 					"buffer": 2,
-					"file": "tex/abstract.tex",
+					"file": "tex/methods.tex",
 					"settings":
 					{
-						"buffer_size": 75,
+						"buffer_size": 27,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								59,
-								59
+								27,
+								27
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -363,58 +313,6 @@
 				},
 				{
 					"buffer": 3,
-					"file": "tex/introduction.tex",
-					"settings":
-					{
-						"buffer_size": 54,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								35,
-								35
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "tex/methods.tex",
-					"settings":
-					{
-						"buffer_size": 19,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18,
-								18
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"file": "tex/results.tex",
 					"settings":
 					{
@@ -442,7 +340,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 4,
 					"file": "tex/discussion.tex",
 					"settings":
 					{
@@ -453,8 +351,8 @@
 						"selection":
 						[
 							[
-								22,
-								22
+								18,
+								18
 							]
 						],
 						"settings":
@@ -468,7 +366,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "tex/references.tex",
 					"settings":
 					{
@@ -494,7 +392,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "tex/commands.tex",
 					"settings":
 					{
@@ -518,147 +416,40 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "data/references.bib",
+					"settings":
+					{
+						"buffer_size": 1468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								438,
+								438
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 9,
-					"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/element.rb",
-					"settings":
-					{
-						"buffer_size": 485,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								295
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/genetic_algorithm.rb",
-					"settings":
-					{
-						"buffer_size": 646,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								639,
-								639
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/util.rb",
-					"settings":
-					{
-						"buffer_size": 1114,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								233,
-								233
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/graph.rb",
-					"settings":
-					{
-						"buffer_size": 184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								173,
-								173
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "/home/geonnave/College/CN/GeneticRouteOptimization/developments/lib/main.rb",
-					"settings":
-					{
-						"buffer_size": 478,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								148,
-								148
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -690,7 +481,7 @@
 		"cols":
 		[
 			0.0,
-			0.165855636659,
+			0.889294403893,
 			1.0
 		],
 		"rows":

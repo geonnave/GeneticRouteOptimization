@@ -25,7 +25,7 @@ module Util
 	def ijbased_rand i, j, max
 		ij = (i-j).abs
 		return Random.rand(max) if ij == 1
-		cij = Random.rand(ij) + ij
+		cij = ij*ij
 		r = Random.rand(max)
 		return (r + (r*cij))
 	end
