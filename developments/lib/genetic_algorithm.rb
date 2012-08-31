@@ -3,11 +3,11 @@ require "./graph.rb"
 
 class GeneticAlgorithm
 	include Util
-	attr_reader :population
+	attr_accessor :population, :number_of_generations, :pop_length, :cross_rate, :mutation_rate, :gen_range
 	
 	#gen_range is a rate of the worst elements that will be eliminated.
 	#if it is 20%, 80% of the best elements will paste to the next generation.
-	def initialize graph, number_of_generations = 20,pop_length=400, cross_rate=10,mutation_rate=10, gen_range=20
+	def initialize graph, pop_length=200, number_of_generations=20, cross_rate=10,mutation_rate=10, gen_range=20
 		@number_of_generations = number_of_generations
 		@graph = graph
 		@population = []
@@ -18,7 +18,6 @@ class GeneticAlgorithm
 	end
 
 	def run
-		gen_population
 		@number_of_generations.times{
 			mutate
 			cross
@@ -30,7 +29,7 @@ class GeneticAlgorithm
 
 	def gen_population
 		genetic_codes = []
-		(@pop_length-population.size).times do 
+		(@pop_length-@population.size).times do 
 			genetic_codes << random_genetic_code(@graph.size)
 		end
 		genetic_codes.uniq!
@@ -54,15 +53,15 @@ class GeneticAlgorithm
 			next if j == 0
 			if @population[i].genetic_code.length == @graph.size
 				@population[i].genetic_code.delete_at j
-			else
+			elsif @population[i].genetic_code.length < @graph.size-1
 				@population[i].genetic_code.insert(j, new_gen(i))
 			end
 		end
 	end
 
 	def new_gen i
-		ng = 0
-		while @population[i].genetic_code.include? ng
+		ng= 0
+		while @population[i].genetic_code.include?(ng)
 			ng = Random.rand(@population[i].genetic_code.length)
 		end
 		ng
@@ -74,6 +73,14 @@ class GeneticAlgorithm
 
 	def calculate rate
 		((@population.size/100)*rate)
+	end
+
+	def to_s
+		"Geracoes: " + @number_of_generations.to_s + "; " + 
+		"Taxa de Cruzamento: " + @cross_rate.to_s + "; " + 
+		"Taxa de Mutacao: " + @mutation_rate.to_s +  "; " + 
+		"Intervalo de geracao: " + @gen_range.to_s +  "; " + 
+		"Melhor fitness: "
 	end
 
 end

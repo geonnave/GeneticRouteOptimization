@@ -22,7 +22,7 @@ Para uma melhor visualização, abaixo está o código desta classe:
 
 \input{tex/algen}
 
-É possível visualizar no método run, primeiramente a chamada ao método \texttt{gen\_population}, a fim de criar a população inicial. Após isso, são chamados, dentro de um loop, consecutivamente, os métodos: \texttt{mutate}, \texttt{cross}, \texttt{select\_next\_generation}, \texttt{gen\_population}.
+É possível visualizar no método \texttt{run}, primeiramente a chamada ao método \texttt{gen\_population}, a fim de criar a população inicial. Após isso, são chamados, dentro de um loop, consecutivamente, os métodos: \texttt{mutate}, \texttt{cross}, \texttt{select\_next\_generation}, \texttt{gen\_population}.
 
 É importante observar que a variável que controla a execução do \emph{loop} é a variável de instância \texttt{number\_of\_generations} (número de gerações). Dentro deste \emph{loop}, o algoritmo irá consecutivamente mutar os indivíduos da população, cruzar, selecionar os que passarão para a próxima geração, gerar novos indivíduos aleatórios e adicioná-los a população.
 

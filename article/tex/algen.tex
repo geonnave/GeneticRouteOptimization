@@ -6,7 +6,8 @@ class GeneticAlgorithm
 	
 	#gen_range is a rate of the worst elements that will be eliminated.
 	#if it is 20%, 80% of the best elements will paste to the next generation.
-	def initialize graph, number_of_generations = 20,pop_length=400, cross_rate=10,mutation_rate=10, gen_range=20
+	def initialize(graph, number_of_generations=20,pop_length=400, 
+			cross_rate=10,mutation_rate=10, gen_range=20)
 		@number_of_generations = number_of_generations
 		@graph = graph
 		@population = []
@@ -33,7 +34,9 @@ class GeneticAlgorithm
 			genetic_codes << random_genetic_code(@graph.size)
 		end
 		genetic_codes.uniq!
-		genetic_codes.each { |genetic_code| @population << Element.new(genetic_code,@graph) }
+		genetic_codes.each so |genetic_code| 
+			@population << Element.new(genetic_code,@graph) 
+		end
 		sort_population
 	end
 
@@ -43,7 +46,9 @@ class GeneticAlgorithm
 	end
 
 	def cross
-		(calculate @cross_rate).times{|i| @population.concat(@population[i].crossing(@population[i+1]))}
+		(calculate @cross_rate).times do |i| 
+			@population.concat(@population[i].crossing(@population[i+1]))
+		end
 		sort_population
 	end
 
